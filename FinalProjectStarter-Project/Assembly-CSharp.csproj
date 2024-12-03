@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\FirePiranha.cs" />
     <Compile Include="Assets\Scripts\PickupConstants.cs" />
     <Compile Include="Assets\Scripts\Goomba.cs" />
+    <Compile Include="Assets\Scripts\Thwomp.cs" />
     <Compile Include="Assets\Scripts\BreakableBlock.cs" />
     <Compile Include="Assets\Scripts\CoinSwitch.cs" />
     <Compile Include="Assets\Scripts\ItemBox.cs" />

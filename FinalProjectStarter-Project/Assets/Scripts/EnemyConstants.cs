@@ -27,4 +27,6 @@ public static class EnemyConstants
     public const float FirePlantFireDelayDuration = 1.5f;
     public const float FirePlantHeadOffsetY = 1.5f;
     public const float FirePlantFireballSpeed = 2.35f;
+
+    // Thwomp Animating
 }
