@@ -28,5 +28,8 @@ public static class EnemyConstants
     public const float FirePlantHeadOffsetY = 1.5f;
     public const float FirePlantFireballSpeed = 2.35f;
 
+    // Podoboo constants
+    public const float PodobooSpeed = 6.0f;
+
     // Thwomp Animating
 }
