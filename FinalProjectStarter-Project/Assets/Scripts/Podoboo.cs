@@ -75,6 +75,18 @@ public class Podoboo : MonoBehaviour
                 timeSinceStart = 0.0f;
             }
         }
+<<<<<<< HEAD
+=======
+
+        else if (state == EPodobooState.FlipUp)
+        {
+            transform.localScale = new Vector2(1, 1);
+            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - 1);
+            state = EPodobooState.Up;
+        }
+
+        
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

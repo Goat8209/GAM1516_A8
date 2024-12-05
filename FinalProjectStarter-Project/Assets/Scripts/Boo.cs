@@ -12,15 +12,22 @@ public enum EBooState : byte
 public class Boo : Enemy
 {
     float speed;
+<<<<<<< HEAD
     float translationAngle;
+=======
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
     EBooState state;
     protected Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
         speed = 2.0f;
         translationAngle = 0.0f;
+=======
+        speed = 3.0f;
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
         state = EBooState.Unknown;
         animator = GetComponent<Animator>();
     }
@@ -30,6 +37,7 @@ public class Boo : Enemy
     {
         Mario mario = Game.Instance.GetMario;
 
+<<<<<<< HEAD
         translationAngle = Mathf.Atan2(mario.transform.localPosition.y - transform.localPosition.y, mario.transform.localPosition.x - transform.localPosition.x);
 
         
@@ -37,12 +45,20 @@ public class Boo : Enemy
         {
             state = EBooState.Chasing;
             transform.localScale = new Vector2(1, transform.localScale.y);
+=======
+        if(mario.transform.localScale.x == -1 && transform.localPosition.x > mario.transform.localPosition.x)
+        {
+            state = EBooState.Chasing;
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
         }
 
         else if(mario.transform.localScale.x == 1 && transform.localPosition.x < mario.transform.localPosition.x)
         {
             state = EBooState.Chasing;
+<<<<<<< HEAD
             transform.localScale = new Vector2(-1, transform.localScale.y);
+=======
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
         }
 
         else
@@ -52,9 +68,31 @@ public class Boo : Enemy
 
         if (state == EBooState.Chasing)
         {
+<<<<<<< HEAD
             Vector2 velocity = new Vector2(Mathf.Cos(translationAngle), Mathf.Sin(translationAngle)) * speed;
             Vector2 displacement = velocity * Time.deltaTime;
             transform.position = new Vector2(transform.position.x + displacement.x, transform.position.y + displacement.y);
+=======
+            if (mario.transform.localPosition.x > transform.localPosition.x)
+            {
+                transform.localPosition = new Vector2(transform.localPosition.x + (speed * Time.deltaTime), transform.localPosition.y);
+            }
+
+            else
+            {
+                transform.localPosition = new Vector2(transform.localPosition.x - (speed * Time.deltaTime), transform.localPosition.y);
+            }
+
+            if (mario.transform.localPosition.y > transform.localPosition.y)
+            {
+                transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + (speed * Time.deltaTime));
+            }
+
+            else
+            {
+                transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - (speed * Time.deltaTime));
+            }
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
         }
 
         UpdateAnimator();

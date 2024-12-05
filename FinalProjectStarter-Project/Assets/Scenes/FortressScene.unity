@@ -22421,6 +22421,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
+=======
+    - target: {fileID: -1760690623565929596, guid: 81c3c22f7ace2d940a702fc2903d4fac, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1690e0dba0635a842b5a22b32b7b5982, type: 2}
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
     - target: {fileID: 1101522983629913606, guid: 81c3c22f7ace2d940a702fc2903d4fac, type: 3}
       propertyPath: m_Name
       value: Boo
@@ -22490,4 +22497,7 @@ SceneRoots:
   - {fileID: 749935891}
   - {fileID: 1084461883}
   - {fileID: 6993834686406170110}
+<<<<<<< HEAD
   - {fileID: 1651278354}
+=======
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39

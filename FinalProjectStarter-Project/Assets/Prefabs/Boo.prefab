@@ -15,7 +15,11 @@ GameObject:
   - component: {fileID: 1043014299809878428}
   m_Layer: 0
   m_Name: Boo
+<<<<<<< HEAD
   m_TagString: Enemy
+=======
+  m_TagString: Untagged
+>>>>>>> 877700b04f85f8d5adb4cbb398c1e39e5fcd5e39
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

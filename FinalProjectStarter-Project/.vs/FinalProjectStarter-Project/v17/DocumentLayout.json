@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotodisc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|c:\\users\\j0etr\\source\\repos\\goat8209\\gam1516_a8\\finalprojectstarter-project\\assets\\scripts\\rotodisccenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\rotodisccenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotodisccenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|c:\\users\\j0etr\\source\\repos\\goat8209\\gam1516_a8\\finalprojectstarter-project\\assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,8 +46,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -58,8 +66,7 @@
               "RelativeToolTip": "Assets\\Scripts\\RotoDiscCenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T22:54:37.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T22:54:37.797Z"
             },
             {
               "$type": "Document",
@@ -69,18 +76,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\RotoDisc.cs",
               "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\RotoDisc.cs",
               "RelativeToolTip": "Assets\\Scripts\\RotoDisc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T22:45:37.572Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Game.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:20:54.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T16:20:54.802Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Boo.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwEoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:09:30.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T16:09:30.288Z"
             },
             {
               "$type": "Document",
@@ -154,8 +151,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Goomba.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAqwBsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T02:55:05.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T02:55:05.715Z"
             },
             {
               "$type": "Document",
