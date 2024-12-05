@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2374252175352141726}
   - component: {fileID: 8356787271985595468}
   - component: {fileID: 5958418394674089178}
+  - component: {fileID: 9072882148115135332}
   m_Layer: 0
   m_Name: Podoboo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +132,7 @@ Animator:
   m_GameObject: {fileID: 9026205236009479926}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 256a6306bf757de489b4f36d87c770ac, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3b374c414d0bde241af4b63aef3f186c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -142,3 +143,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9072882148115135332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9026205236009479926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eaed7977a223f74ea19e30df814410f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

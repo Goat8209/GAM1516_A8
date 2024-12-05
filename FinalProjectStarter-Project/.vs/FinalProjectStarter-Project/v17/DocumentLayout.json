@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|c:\\users\\j0etr\\source\\repos\\goat8209\\gam1516_a8\\finalprojectstarter-project\\assets\\scripts\\enemyconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|c:\\users\\j0etr\\source\\repos\\goat8209\\gam1516_a8\\finalprojectstarter-project\\assets\\scripts\\rotodisc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotodisc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|c:\\users\\j0etr\\source\\repos\\goat8209\\gam1516_a8\\finalprojectstarter-project\\assets\\scripts\\rotodisccenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotodisccenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\boo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|c:\\users\\j0etr\\source\\repos\\goat8209\\gam1516_a8\\finalprojectstarter-project\\assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\podoboo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\podoboo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\enemyconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E35BE44-C04F-C420-2D7E-0EFF7E7C468D}|Assembly-CSharp.csproj|C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +46,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RotoDiscCenter.cs",
+              "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\RotoDiscCenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RotoDiscCenter.cs",
+              "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\RotoDiscCenter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RotoDiscCenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T22:54:37.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RotoDisc.cs",
+              "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\RotoDisc.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RotoDisc.cs",
+              "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\RotoDisc.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RotoDisc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T22:45:37.572Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -42,56 +84,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Game.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game.cs",
+              "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Game.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T16:20:54.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Boo.cs",
+              "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Boo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Boo.cs",
+              "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Boo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Boo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwEoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T16:09:30.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EnemyConstants.cs",
               "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\EnemyConstants.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyConstants.cs",
               "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\EnemyConstants.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyConstants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T03:10:21.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T03:10:21.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Podoboo.cs",
               "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Podoboo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Podoboo.cs",
               "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Podoboo.cs",
               "RelativeToolTip": "Assets\\Scripts\\Podoboo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T03:04:31.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
               "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T02:55:01.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Goomba.cs",
               "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Goomba.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Goomba.cs",
               "ToolTip": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Goomba.cs",
               "RelativeToolTip": "Assets\\Scripts\\Goomba.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAqwBsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T02:55:05.715Z"
+              "WhenOpened": "2024-12-04T02:55:05.715Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Lava.cs",
               "DocumentMoniker": "C:\\Users\\j0etr\\source\\repos\\Goat8209\\GAM1516_A8\\FinalProjectStarter-Project\\Assets\\Scripts\\Lava.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lava.cs",

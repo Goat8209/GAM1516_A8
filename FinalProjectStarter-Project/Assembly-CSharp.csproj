@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\PickupConstants.cs" />
     <Compile Include="Assets\Scripts\Goomba.cs" />
     <Compile Include="Assets\Scripts\BreakableBlock.cs" />
+    <Compile Include="Assets\Scripts\Boo.cs" />
     <Compile Include="Assets\Scripts\CoinSwitch.cs" />
     <Compile Include="Assets\Scripts\ItemBox.cs" />
     <Compile Include="Assets\Scripts\MarioState.cs" />
@@ -81,11 +82,13 @@
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\PiranhaPlant.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\RotoDiscCenter.cs" />
     <Compile Include="Assets\Scripts\EnemyConstants.cs" />
     <Compile Include="Assets\Scripts\Mario.cs" />
     <Compile Include="Assets\Scripts\MarioController.cs" />
     <Compile Include="Assets\Scripts\Podoboo.cs" />
     <Compile Include="Assets\Scripts\ItemBoxCoin.cs" />
+    <Compile Include="Assets\Scripts\RotoDisc.cs" />
     <Compile Include="Assets\Scripts\CoinPickup.cs" />
     <Compile Include="Assets\Scripts\Fireball.cs" />
     <Compile Include="Assets\Scripts\HUD.cs" />

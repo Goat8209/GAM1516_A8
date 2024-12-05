@@ -8,57 +8,73 @@ public enum EPodobooState : byte
     Down,
     Up,
     FlipUp,
-    FlipDown
+    FlipDown,
+    Waiting
 }
 
 public class Podoboo : MonoBehaviour
 {
     private float timeSinceStart;
+    private float startingY;
     private EPodobooState state = EPodobooState.Unknown;
+    private float popupDelay;
 
     // Start is called before the first frame update
     void Start()
     {
         state = EPodobooState.Up;
         timeSinceStart = 0;
+        startingY = transform.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeSinceStart += Time.deltaTime;
-        transform.position = new Vector2(transform.position.x, transform.position.y + Mathf.Sin(timeSinceStart) * Time.deltaTime * EnemyConstants.PodobooSpeed);
-    
-        if(state == EPodobooState.Up)
+        if (state != EPodobooState.Waiting)
         {
-            if(Mathf.Sin(timeSinceStart) < 0)
+            timeSinceStart += Time.deltaTime;
+            transform.position = new Vector2(transform.position.x, transform.position.y + Mathf.Cos(timeSinceStart) * Time.deltaTime * EnemyConstants.PodobooSpeed);
+
+            if (state == EPodobooState.Up)
             {
-                state = EPodobooState.FlipDown;
+                if (Mathf.Cos(timeSinceStart) < 0)
+                {
+                    state = EPodobooState.FlipDown;
+                }
+            }
+
+            else if (state == EPodobooState.FlipDown)
+            {
+                transform.localScale = new Vector2(1, -1);
+                transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + 1);
+                state = EPodobooState.Down;
+            }
+
+            else if (state == EPodobooState.Down)
+            {
+                if (transform.localPosition.y <= startingY)
+                {
+                    transform.localScale = new Vector2(1, 1);
+                    transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - 1);
+
+                    state = EPodobooState.Waiting;
+                    transform.localPosition = new Vector2(transform.localPosition.x, startingY);
+                    timeSinceStart = 0.0f;
+                    popupDelay = Random.Range(1.5f, 3.5f);
+                }
             }
         }
 
-        else if (state == EPodobooState.FlipDown)
+        else if (state == EPodobooState.Waiting)
         {
-            transform.localScale = new Vector2(1, -1);
-            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + 1);
-            state = EPodobooState.Down;
-        }
+            timeSinceStart += Time.deltaTime;
 
-        else if (state == EPodobooState.Down)
-        {
-            if (Mathf.Sin(timeSinceStart) >= 0)
+            if (timeSinceStart >= popupDelay)
             {
-                state = EPodobooState.FlipUp;
+                state = EPodobooState.Up;
+                timeSinceStart = 0.0f;
             }
         }
-
-        else if (state == EPodobooState.FlipUp)
-        {
-            transform.localScale = new Vector2(1, 1);
-            state = EPodobooState.Up;
-        }
-
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
