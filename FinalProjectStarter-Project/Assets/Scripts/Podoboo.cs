@@ -55,6 +55,7 @@ public class Podoboo : MonoBehaviour
         else if (state == EPodobooState.FlipUp)
         {
             transform.localScale = new Vector2(1, 1);
+            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - 1);
             state = EPodobooState.Up;
         }
 
