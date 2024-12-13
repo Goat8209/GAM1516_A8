@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MushroomPickup : Pickup
+public class OneUpPickup : Pickup
 {
     public BoxCollider2D frontTrigger;
     public BoxCollider2D backTrigger;
@@ -13,7 +13,7 @@ public class MushroomPickup : Pickup
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        pickupType = EPickupType.Mushroom;
+        pickupType = EPickupType.OneUp;
     }
 
     private void FixedUpdate()

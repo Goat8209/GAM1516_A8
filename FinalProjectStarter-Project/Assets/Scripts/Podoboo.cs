@@ -19,12 +19,16 @@ public class Podoboo : MonoBehaviour
     private EPodobooState state = EPodobooState.Unknown;
     private float popupDelay;
 
+    public Splash splashPrefab;
+    private Splash splash = null;
+
     // Start is called before the first frame update
     void Start()
     {
         state = EPodobooState.Up;
         timeSinceStart = 0;
         startingY = transform.position.y;
+        splash = Instantiate(splashPrefab, new Vector2(transform.position.x, transform.position.y + 1.0f), Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -61,6 +65,7 @@ public class Podoboo : MonoBehaviour
                     transform.localPosition = new Vector2(transform.localPosition.x, startingY);
                     timeSinceStart = 0.0f;
                     popupDelay = Random.Range(1.5f, 3.5f);
+                    splash = Instantiate(splashPrefab, new Vector2(transform.position.x, transform.position.y + 1.0f), Quaternion.identity);
                 }
             }
         }
@@ -73,6 +78,7 @@ public class Podoboo : MonoBehaviour
             {
                 state = EPodobooState.Up;
                 timeSinceStart = 0.0f;
+                splash = Instantiate(splashPrefab, new Vector2(transform.position.x, transform.position.y + 1.0f), Quaternion.identity);
             }
         }
 

@@ -29,6 +29,8 @@ public class Game : MonoBehaviour
     public GameObject breakableBlockBitPrefab;
     public GameObject fireballPrefab;
     public GameObject changeAnimationPrefab;
+    public GameObject oneUpPickupPrefab;
+    public GameObject fireFlowerPickupPrefab;
 
 
     private GameObject deadMario = null;
@@ -280,6 +282,26 @@ public class Game : MonoBehaviour
             GameObject mushroomObject = Instantiate(mushroomPickupPrefab, new Vector3(location.x, location.y, 1.0f), Quaternion.identity);
             MushroomPickup mushroomPickup = mushroomObject.GetComponent<MushroomPickup>();
             mushroomPickup.Spawn();
+        }
+    }
+
+    public void SpawnOneUpPickup(Vector2 location)
+    {
+        if (oneUpPickupPrefab != null)
+        {
+            GameObject oneUpObject = Instantiate(oneUpPickupPrefab, new Vector3(location.x, location.y, 1.0f), Quaternion.identity);
+            OneUpPickup oneUpPickup = oneUpObject.GetComponent<OneUpPickup>();
+            oneUpPickup.Spawn();
+        }
+    }
+
+    public void SpawnFireFlowerPickup(Vector2 location)
+    {
+        if (fireFlowerPickupPrefab != null)
+        {
+            GameObject fireFlowerObject = Instantiate(fireFlowerPickupPrefab, new Vector3(location.x, location.y, 1.0f), Quaternion.identity);
+            FireFlowerPickup fireFlowerPickup = fireFlowerObject.GetComponent<FireFlowerPickup>();
+            fireFlowerPickup.Spawn();
         }
     }
 

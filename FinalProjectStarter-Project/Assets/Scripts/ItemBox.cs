@@ -18,7 +18,9 @@ public enum EItemBoxContents : byte
     Coin1,
     Coin5,
     Coin10,
-    CoinSwitch
+    CoinSwitch,
+    OneUp,
+    FireFlower
               
         // TODO: Add additional ItemBox contents here
 }
@@ -158,6 +160,14 @@ public class ItemBox : MonoBehaviour
             else if (contents == EItemBoxContents.CoinSwitch)
             {
                 Game.Instance.SpawnCoinSwitch(transform.position + new Vector3(0.0f, 1.0f, 0.0f));
+            }
+            else if(contents == EItemBoxContents.OneUp)
+            {
+                Game.Instance.SpawnOneUpPickup(location);
+            }
+            else if (contents == EItemBoxContents.FireFlower)
+            {
+                Game.Instance.SpawnFireFlowerPickup(location);
             }
         }
     }

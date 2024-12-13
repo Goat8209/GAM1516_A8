@@ -260,6 +260,15 @@ public class Mario : MonoBehaviour
 
             ApplyTransformChange(EMarioForm.Small);
         }
+
+        else if (marioState.Form == EMarioForm.Fire)
+        {
+            damagedTimer = MarioConstants.InvincibleVisibilityDuration;
+            marioState.InvincibilityTimer = MarioConstants.InvincibleTime;
+            gameObject.layer = LayerMask.NameToLayer("MarioInvincible");
+
+            ApplyTransformChange(EMarioForm.Super);
+        }
     }
 
     public void ApplyStateChange(EMarioState newState)
@@ -278,7 +287,7 @@ public class Mario : MonoBehaviour
         }
 
         // Handle the duck resize and reposition when mario is big
-        if (marioState.Form == EMarioForm.Super)
+        if (marioState.Form == EMarioForm.Super || marioState.Form == EMarioForm.Fire)
         {
             if (newState == EMarioState.Ducking)
             {
@@ -330,6 +339,24 @@ public class Mario : MonoBehaviour
                 animator.speed = 1.0f;
                 animator.Play("MarioDamage");
             }
+
+            else if (oldForm == EMarioForm.Small || oldForm == EMarioForm.Super && newForm == EMarioForm.Fire)
+            {
+                //Game.Instance.PauseActors();
+
+                transformOrDamageAnimationIsRunning = true;
+                previousAnimatorSpeed = animator.speed;
+                animator.speed = 1.0f;
+                animator.Play("MarioPoof");
+            }
+
+            else if (oldForm == EMarioForm.Fire && newForm == EMarioForm.Super)
+            {
+                transformOrDamageAnimationIsRunning = true;
+                previousAnimatorSpeed = animator.speed;
+                animator.speed = 1.0f;
+                animator.Play("MarioPoof");
+            }
         }
     }
 
@@ -362,6 +389,16 @@ public class Mario : MonoBehaviour
                 marioState.Coins++;
             }
 
+            else if (pickupType == EPickupType.OneUp)
+            {
+                marioState.Lives++;
+            }
+
+            else if (pickupType == EPickupType.FireFlower)
+            {
+                ApplyTransformChange(EMarioForm.Fire);
+            }
+
             // Destroy the pickup gameObject
             Destroy(collider.gameObject);
         }
@@ -384,7 +421,7 @@ public class Mario : MonoBehaviour
         // Ensure that mario isn't dead
         if (marioState.State != EMarioState.Dead)
         {
-            if (marioState.Form == EMarioForm.Super)
+            if (marioState.Form == EMarioForm.Super || marioState.Form == EMarioForm.Fire)
                 ApplyTransformChange(EMarioForm.Small, true);
 
             // Set the state change to Dead
@@ -479,6 +516,7 @@ public class Mario : MonoBehaviour
                 }
             }
         }
+
         else if (marioState.Form == EMarioForm.Super)
         {
             if (marioState.State == EMarioState.Idle)
@@ -528,6 +566,59 @@ public class Mario : MonoBehaviour
             else if (marioState.State == EMarioState.Ducking)
             {
                 animator.Play("MarioSuperDuck");
+            }
+        }
+
+        else if(marioState.Form == EMarioForm.Fire)
+        {
+            if (marioState.State == EMarioState.Idle)
+            {
+                animator.Play("MarioFireIdle");
+            }
+            else if (marioState.State == EMarioState.Walking)
+            {
+                if (marioMovement.IsSkidding() == false)
+                {
+                    if (marioState.IsRunning && marioState.RunningMeter == MarioConstants.MaxRunningMeter)
+                    {
+                        animator.Play("MarioFireRun");
+                    }
+                    else
+                    {
+                        animator.Play("MarioFireWalk");
+                    }
+                }
+                else
+                {
+                    animator.Play("MarioFireTurn");
+
+                }
+            }
+            else if (marioState.State == EMarioState.Jumping)
+            {
+                if (marioState.IsRunning && marioState.RunningMeter == MarioConstants.MaxRunningMeter)
+                {
+                    animator.Play("MarioFireRunJump");
+                }
+                else
+                {
+                    animator.Play("MarioFireJump");
+                }
+            }
+            else if (marioState.State == EMarioState.Falling)
+            {
+                if (marioState.IsRunning && marioState.RunningMeter == MarioConstants.MaxRunningMeter)
+                {
+                    animator.Play("MarioFireRunJump");
+                }
+                else
+                {
+                    animator.Play("MarioFireJumpApex");
+                }
+            }
+            else if (marioState.State == EMarioState.Ducking)
+            {
+                animator.Play("MarioFireDuck");
             }
         }
     }
