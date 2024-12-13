@@ -155,3 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a428cc8c9182ff4aa72865d1aca1932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splashPrefab: {fileID: -8831924379778345572, guid: 68eb9f99a92324c4bba4c94da1aff151, type: 3}

@@ -29,7 +29,7 @@ public static class EnemyConstants
     public const float FirePlantFireballSpeed = 2.35f;
 
     // Podoboo constants
-    public const float PodobooSpeed = 6.0f;
+    public const float PodobooSpeed = 9.0f;
 
     // Boo constants
     public const float BooSpeed = 2.0f;
