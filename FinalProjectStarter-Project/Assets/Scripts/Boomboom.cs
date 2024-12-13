@@ -114,7 +114,7 @@ public class Boomboom : Enemy
                     directionTimer = UnityEngine.Random.Range(EnemyConstants.BoomboomDirectionTimerMin, EnemyConstants.BoomboomDirectionTimerMax);
                 }
                 rigidbody.bodyType = RigidbodyType2D.Dynamic;
-                primaryCollider.isTrigger = false;*
+                primaryCollider.isTrigger = false;
             }
             else if (state == EBoomboomState.Stunned)
             {
