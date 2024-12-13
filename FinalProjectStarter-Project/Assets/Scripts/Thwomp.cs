@@ -35,7 +35,7 @@ public class Thwomp : Enemy
     {
         if (state == EThwompState.Up)
         {
-            if (Game.Instance.GetMario.transform.position.x >= transform.position.x - GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.x <= transform.position.x + GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.y < transform.position.y) 
+            if (Game.Instance.GetMario.transform.position.x >= transform.position.x - GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.x <= transform.position.x + GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.y < transform.position.y)
             {
                 SetState(EThwompState.AnimatingDown);
             }
