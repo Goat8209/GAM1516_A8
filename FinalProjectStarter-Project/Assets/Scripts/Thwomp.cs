@@ -35,7 +35,7 @@ public class Thwomp : Enemy
     {
         if (state == EThwompState.Up)
         {
-            if (Game.Instance.GetMario.transform.position.x >= transform.position.x - GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.x <= transform.position.x + GetComponent<BoxCollider2D>().size.x)
+            if (Game.Instance.GetMario.transform.position.x >= transform.position.x - GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.x <= transform.position.x + GetComponent<BoxCollider2D>().size.x && Game.Instance.GetMario.transform.position.y < transform.position.y) 
             {
                 SetState(EThwompState.AnimatingDown);
             }
@@ -43,6 +43,12 @@ public class Thwomp : Enemy
         else if (state == EThwompState.AnimatingUp)
         {
             transform.localPosition += new Vector3(0.0f, EnemyConstants.ThwompRisingSpeed * Time.deltaTime, 0.0f);
+
+            if(transform.position.y >= upLocation.y)
+            {
+                transform.position = upLocation;
+                SetState(EThwompState.Up);
+            }
         }
         else if (state == EThwompState.Down)
         {
@@ -57,11 +63,11 @@ public class Thwomp : Enemy
         {
             transform.localPosition -= new Vector3(0.0f, EnemyConstants.ThwompFallingSpeed * Time.deltaTime, 0.0f);
         
-            //Hard coded stopping point
+/*            //Hard coded stopping point
             if(transform.localPosition.y <= upLocation.y -5)
             {
                 SetState(EThwompState.Down);
-            }
+            }*/
         }
     }
 
@@ -73,6 +79,10 @@ public class Thwomp : Enemy
             {
                 SetState(EThwompState.Down);
             }
+        }
+        else if(other.gameObject.CompareTag("Mario") && state == EThwompState.AnimatingDown)
+        {
+            Game.Instance.GetMario.HandleDamage();
         }
     }
 
