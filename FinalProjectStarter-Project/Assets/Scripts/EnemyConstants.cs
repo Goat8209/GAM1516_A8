@@ -40,12 +40,13 @@ public static class EnemyConstants
     public const float ThwompHoldTimer = 4.0f;
 
     //Boomboom constants
-    public const float BoomboomStunnedDuration = 3.0f;
+    public const float BoomboomStunnedDuration = 2.0f;
     public const float BoomboomDeadDuration = 3.0f;
-    public const float BoomboomSpeed = 5.0f;
-    public const float BoomboomHidingDuration = 3.0f;
-    public const float BoomboomJumpTimer = 3.0f;
+    public const float BoomboomSpeed = 6.0f;
+    public const float BoomboomHidingDuration = 1.0f;
+    public const float BoomboomJumpTimer = 1.5f;
     public const float BoomboomDirectionTimerMin = 5.0f;
-    public const float BoomboomDirectionTimerMax = 5.0f;
-
+    public const float BoomboomDirectionTimerMax = 10.0f;
+    public const float BoomboomJumpForce = 1000.0f;
+    public const float BoomboomActivationDistance = 10.0f;
 }
