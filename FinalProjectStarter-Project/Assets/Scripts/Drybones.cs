@@ -116,13 +116,13 @@ public class Drybones : Enemy
             state = newState;
 
             if (state == EDrybonesState.Walking)
-d            {
+            {
                 rigidbody.bodyType = RigidbodyType2D.Dynamic;
                 primaryCollider.isTrigger = false;
             }
             else if (state == EDrybonesState.Stunned)
             {
-                stunnedDuration = EnemyConstants.GoombaSquishedDuration;
+                stunnedDuration = 2.0f;
                 rigidbody.bodyType = RigidbodyType2D.Static;
                 primaryCollider.isTrigger = true;
             }
@@ -147,11 +147,11 @@ d            {
     {
         if (state == EDrybonesState.Walking)
         {
-            animator.Play("GoombaWalk");
+            animator.Play("DrybonesWalking");
         }
         else if (state == EDrybonesState.Stunned)
         {
-            animator.Play("GoombaSquished");
+            animator.Play("DrybonesStunned");
         }
         else if (state == EDrybonesState.Dead)
         {
@@ -235,7 +235,7 @@ d            {
             // The Goomba collided with another Enemy
             EEnemyType enemyType = other.gameObject.GetComponent<Enemy>().EnemyType;
 
-            if (enemyType == EEnemyType.Goomba)
+            //if (enemyType == EEnemyType.Drybones)
             {
                 flipMovementDirection = true;
             }
