@@ -91,10 +91,16 @@ public class Game : MonoBehaviour
         get { return isGameOver; }
     }
 
+    public bool IsGameWon
+    {
+        get { return isGameWon; }
+    }
+
     public void GameWon()
     {
         state = EGameState.Won;
         fadeInOutTimer = GameConstants.BlackOverlayFadeInOutDuration;
+        isGameWon = true;
     }
 
     // Start is called before the first frame update
@@ -202,9 +208,9 @@ public class Game : MonoBehaviour
             fadeInOutTimer -= Time.deltaTime;
 
             float elapsed = Mathf.Max(0.0f, GameConstants.BlackOverlayFadeInOutDuration - fadeInOutTimer);
-            float alpha = 1.0f - (elapsed / GameConstants.BlackOverlayFadeInOutDuration);
+            float alpha = 0.0f + (elapsed / GameConstants.BlackOverlayFadeInOutDuration);
 
-            blackOverlayAlpha = alpha; 
+            blackOverlayAlpha = alpha;
         }
     }
 

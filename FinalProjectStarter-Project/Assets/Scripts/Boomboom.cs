@@ -13,7 +13,7 @@ public enum EBoomboomState : byte
     Walking,
     Stunned,
     Jumping,
-    Dead,
+    Dead
 }
 
 public enum EBoomboomDamageState : byte
@@ -49,6 +49,13 @@ public class Boomboom : Enemy
     private float jumpTimer = 0.0f;
     private float directionTimer = 0.0f;
     private Vector2 velocity = Vector2.zero;
+
+    //public Splash splashPrefab;
+    //private Splash splash = null;
+    public QuestionMarkCircle questionMarkCirclePrefab;
+    private QuestionMarkCircle questionMarkCircle = null;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -136,6 +143,9 @@ public class Boomboom : Enemy
             if (deadDuration <= 0.0f)
             {
                 Destroy(gameObject);
+                //splash = Instantiate(splashPrefab, new Vector2(transform.position.x, transform.position.y + 1.0f), Quaternion.identity);
+
+                questionMarkCircle = Instantiate(questionMarkCirclePrefab, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
             }
         }
     }

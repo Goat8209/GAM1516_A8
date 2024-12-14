@@ -21,7 +21,6 @@ public class QuestionMarkCircle : Pickup
         if (collision.gameObject.CompareTag("Mario"))
         {
             Game.Instance.GameWon();
-            //Game.Instance.SetState(EGameState.FadeOut);
         }
     }
 }

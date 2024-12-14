@@ -12,6 +12,7 @@ public class HUD : MonoBehaviour
     public Image[] arrowImages;
     public Image gameOverImage;
     public Image blackOverlay;
+    public Image gameWonImage;
 
     private float gameOverAlpha = 0.0f;
     private float flashTimer = 0.1f;
@@ -21,6 +22,7 @@ public class HUD : MonoBehaviour
     void Start()
     {
         gameOverImage.color = new Color(1.0f, 1.0f, 1.0f, gameOverAlpha);
+        gameWonImage.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         blackOverlay.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
 
     }
@@ -67,6 +69,11 @@ public class HUD : MonoBehaviour
                 gameOverAlpha = 1.0f;
                 gameOverImage.color = new Color(1.0f, 1.0f, 1.0f, gameOverAlpha);
             }
+        }
+
+        if(Game.Instance.IsGameWon)
+        {
+            gameWonImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         }
 
         // Set the black overlay alpha

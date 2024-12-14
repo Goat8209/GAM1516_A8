@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   primaryCollider: {fileID: 352863339986230358}
   initialDirection: 0
+  questionMarkCirclePrefab: {fileID: 5723638820957028100, guid: 03114232e34b45643acc4749c50424fa, type: 3}
 --- !u!61 &352863339986230358
 BoxCollider2D:
   m_ObjectHideFlags: 0
