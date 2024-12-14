@@ -49,4 +49,10 @@ public static class EnemyConstants
     public const float BoomboomDirectionTimerMax = 10.0f;
     public const float BoomboomJumpForce = 1000.0f;
     public const float BoomboomActivationDistance = 10.0f;
+
+    //Drybones constants
+    public const float DrybonesSpeed = 2.5f;
+    public const float DrybonesStunnedDuration = 1.0f;
+    public const float DrybonesDeadDuration = 2.5f;
+    public const float DrybonesRevivingDuration = 1.0f;
 }
