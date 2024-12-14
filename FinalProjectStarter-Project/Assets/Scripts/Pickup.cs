@@ -8,7 +8,8 @@ public enum EPickupType : byte
     Mushroom,
     Coin,
     OneUp,
-    FireFlower
+    FireFlower,
+    QuestionMarkCircle
 }
 
 public enum EPickupState : byte

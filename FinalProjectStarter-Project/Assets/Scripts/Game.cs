@@ -10,7 +10,8 @@ public enum EGameState : byte
     Gameplay,
     FadeIn,
     FadeHold,
-    FadeOut
+    FadeOut,
+    Won
 };
 
 public class Game : MonoBehaviour
@@ -43,6 +44,7 @@ public class Game : MonoBehaviour
     private float coinSwitchDuration = 0.0f;
     private EGameState state = EGameState.Unknown;
     private bool isGameOver = false;
+    private bool isGameWon = false;
 
     public static Game Instance
     {
@@ -87,6 +89,12 @@ public class Game : MonoBehaviour
     public bool IsGameOver
     {
         get { return isGameOver; }
+    }
+
+    public void GameWon()
+    {
+        state = EGameState.Won;
+        fadeInOutTimer = GameConstants.BlackOverlayFadeInOutDuration;
     }
 
     // Start is called before the first frame update
@@ -188,7 +196,19 @@ public class Game : MonoBehaviour
                 SetState(EGameState.Gameplay);
             }
         }
+
+        else if (state == EGameState.Won)
+        {
+            fadeInOutTimer -= Time.deltaTime;
+
+            float elapsed = Mathf.Max(0.0f, GameConstants.BlackOverlayFadeInOutDuration - fadeInOutTimer);
+            float alpha = 1.0f - (elapsed / GameConstants.BlackOverlayFadeInOutDuration);
+
+            blackOverlayAlpha = alpha; 
+        }
     }
+
+
 
     public void NextRoom(Door door)
     {
